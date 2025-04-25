@@ -1,6 +1,7 @@
 import {Routes, Route, Navigate} from "react-router-dom"
 import Empleados from "../pages/Empleados";
 import App from "../App";
+import Bolsillos from "../pages/Bolsillos";
 
 
 
@@ -10,6 +11,7 @@ function Rutas(){
         <Routes>
             <Route path="/dashboard" element={<App></App>}>
                 <Route path="employees" element={<Empleados></Empleados>}></Route>
+                <Route path="pockets" element={<Bolsillos></Bolsillos>}></Route>
                 {/* Aquí van todas las ritas anidadas dentro dle dashboard */}
             </Route>
 
