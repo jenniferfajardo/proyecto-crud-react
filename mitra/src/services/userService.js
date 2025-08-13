@@ -29,7 +29,6 @@ export async function changeUserStatus(id, estado) {
   });
 }
 
-
 export const updateUser = async (user) => {
   const {id, nombre, apellido, numtelefono, correo, password} =user;
   return await fetch(`${API_BASE}/user/update-user/${id}`, {
